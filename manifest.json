@@ -1,0 +1,16 @@
+{
+  "name": "Legibility",
+  "version": "1.0",
+  "description": "Chrome extension for increasing text legibility on most websites.",
+  "manifest_version": 2,
+  "permissions": [
+  "activeTab"
+],
+  "content_scripts": [
+  {
+    "matches": ["http://*/*"],
+    "matches": ["https://*/*"],
+    "css": ["legibility.css"]
+  }
+]
+}
